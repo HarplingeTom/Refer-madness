@@ -1,0 +1,45 @@
+$table-highlight: lightgreen;
+
+#dashboard-tables {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.low-inventory {
+  background-color: pink;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0.2rem solid rgb(200,200,200);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+td, th {
+  border: 0.1rem solid rgb(190, 190, 190);
+  padding: 1rem;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  padding: 1rem;
+  caption-side: top;
+}
+
+th[scope="col"] {
+  background-color: #696969;
+  color: white;
+}
+
+th[scope="row"] {
+  background-color: #d7d9f2;
+}
+
+tr:nth-child(even) {
+  background-color: $table-highlight;
+}
